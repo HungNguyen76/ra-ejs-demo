@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <%- include('./nav.ejs') %>
+    <form
+      class="d-flex align-items-center justify-content-center mt-5"
+      action=""
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input type="text" name="name" placeholder="dog name" />
+      <input type="number" name="price" placeholder="dog price" />
+      <input type="file" name="url" placeholder="dog image" />
+      <button type="submit">Submit</button>
+    </form>
+    <%- include('./footer.ejs') %>
+  </body>
+</html>
